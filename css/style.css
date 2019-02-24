@@ -1,6 +1,16 @@
 body {
-  background-color: lightcoral;
+  background-color: whitesmoke;
+    text-align: center;
 }
-p { 
-  background-color: light goldenrod;
+
+h1,
+h2,
+h3{
+    color:lightcoral
+}
+p {
+    color:forestgreen
+}
+#scholarships {
+    color:forestgreen
 }
