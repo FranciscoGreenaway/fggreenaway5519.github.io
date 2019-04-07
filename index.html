@@ -1,23 +1,25 @@
 <!doctype html>
-    <html lang=en>
+ <!--My name is Francisco Greenaway. A brief description of this file is that it represents my portfolio. It includes information and experiences of mine.-->
+  <html lang="en-US">
         <head>
             <meta charset=utf-8>
             <title>Cisco's Portfolio</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         </head> 
+        
 <body>
     <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
         Your browser does not support the HTML5 canvas tag.</canvas>
     <div class="aboutme">
         <h1 id="aboutme">About Me</h1>
-        <p>Hello, I'm Francisco. I'm of haitian and dominican descent. I am currently a software programming newbie attending Florida Gulf Coast University. I am a former athlete and guitarist. </p>
-        <p>My furture plans are to create computer games or own my own cyber security company.
+          <p>Hello, I'm Francisco. I'm of haitian and dominican descent. I am currently a software programming newbie attending Florida Gulf Coast University. I am a former athlete and guitarist. </p>
+          <p>My furture plans are to create computer games or own my own cyber security company.
         Others would describe me as hardworking and focused. I easily see me taking this software stuff to the next level in due time.</p>
           <img src="images/haiti.jpg" alt="haitian flag" width="250" height="250"/>
     </div>
     
     <div id="scholarships">
-    <h2 class="scholarships">Scholarships</h1>
+      <h2 class="scholarships">Scholarships</h2>
         <ul  style="list-style-type:disc;">
             <li>FG-Campbell 1st Generation Scholarship	</li>
             <li>FL Student Assistance Grant	</li>
@@ -27,24 +29,24 @@
     </div>
     
     <div id="educationexperience">
-        <h3>Education Experience</h1>
+        <h2>Education Experience</h2>
             <p>COP 1500</p>
     </div>
     
     <div id="worksamples">
-        <h3>Work Samples</h1>  
-        <a href="https://scratch.mit.edu/projects/282225723//" target="_blank">Scratch </a>
+        <h2>Work Samples</h2>  
+          <a href="https://scratch.mit.edu/projects/282225723//" target="_blank">Scratch </a>
     </div>
     
     <div id="topaccomplishment">
-        <h3>Top Accomplishments</h1>
-        <p>First Generation College Student</p>
+        <h2>Top Accomplishments</h2>
+          <p>First Generation College Student</p>
 
     </div>    
     
 
     <div id="links">
-        <h3>Links to Github and codecademy</h1>
+        <h3>Links to Github and codecademy</h3>
             <a href="https://github.com/fggreenaway5519/fggreenaway5519.github.io/blob/master/README.md" target="_blank">Github</a>
             <a href="https://www.codecademy.com/fggreenaway5519" target="_blank">Codecademy</a>
     </div>
@@ -54,41 +56,44 @@
     </div>
     
     <div id="fieldsReport">
-    <a href="fieldsReport.pdf">Fields Report</a> 
+      <a href="fieldsreport.pdf">Fields Report</a> 
     </div>
+   
+    <svg height="130" width="500">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="25%"
+          style="stop-color:rgb(225,90,60);stop-opacity:1" />
+          <stop offset="100%"
+          style="stop-color:rgb(72,60,240);stop-opacity:1" />
+        </linearGradient>
+       </defs>
+       <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+       <text fill="#ffffff" font-size="45" font-family="Verdana"
+       x="50" y="86">ZOE</text>
+     </svg>
     
+    <audio controls>
+      <source src="zeze.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+ 
+    <!--Struggled with relative path -->      
+   <iframe width="380" height="315"
+      src="https://www.youtube.com/embed/FVxHYIUEQac">
+    </iframe>
+       
+  <a href="http://www.w3.org/html/logo/">
+        <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+  </a>
+   
     <script>
+            // Hello my name is Francisco Greenaway. This section of java script is for my canvas element.
+
         var c = document.getElementById("myCanvas");
         var ctx = c.getContext("2d");
         ctx.font = "30px Arial";
-        ctx.fillText("Hello World",10,50);
+        ctx.fillText("   Francisco",10,50);
     </script>
-   
-    <svg height="130" width="500">
-    <defs>
-        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%"
-          style="stop-color:rgb(255,255,0);stop-opacity:1" />
-          <stop offset="100%"
-          style="stop-color:rgb(255,0,0);stop-opacity:1" />
-        </linearGradient>
-      </defs>
-      <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
-      <text fill="#ffffff" font-size="45" font-family="Verdana"
-      x="50" y="86">SVG</text>
-    Sorry, your browser does not support inline SVG.
-    </svg>
     
-    <audio controls>
-      <source src="horse.ogg" type="audio/ogg">
-      <source src="horse.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-    </audio>
-         
-    <video width="320" height="240" controls>
-      <source src="movie.mp4" type="video/mp4">
-      <source src="movie.ogg" type="video/ogg">
-    Your browser does not support the video tag.
-    </video>
-</body>
-</html>
+</body> </html>
