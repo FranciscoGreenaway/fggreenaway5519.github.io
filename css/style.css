@@ -1,16 +1,14 @@
+/* Hello my name is Francisco Greenaway. This css file is just to add style to my page. Very basic but clean. */
 body {
-  background-color: whitesmoke;
+    background-color: white;
     text-align: center;
 }
-
-h1,
-h2,
-h3{
-    color:lightcoral
+h1,h2,h3{
+    color:red
 }
 p {
-    color:forestgreen
+    color:green
 }
 #scholarships {
-    color:forestgreen
+    color:green
 }
