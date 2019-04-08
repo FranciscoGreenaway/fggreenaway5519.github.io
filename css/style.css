@@ -12,3 +12,6 @@ p {
 #scholarships {
     color:green
 }
+ul {
+  list-style-position: inside;
+}
