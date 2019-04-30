@@ -17,7 +17,85 @@
         Others would describe me as hardworking and focused. I easily see me taking this software stuff to the next level in due time.</p>
       <img src="images/haiti.jpg" alt="haitian flag" width="250" height="250"/>
   </div>
+   
+  <h2>Gleeful!!</h2>
+    <p id="demo"></p>
+
+    <script>
+      function myFunction() {
+      var txt;
+      var person = prompt("Please enter your name:", " ");
+      if (person == null || person == " ") {
+        txt = "User cancelled the prompt.";
+      } else {
+        txt = "Hello " + person + "! How are you today?";
+      }
+      document.getElementById("demo").innerHTML = txt;
+    }
+   </script>     
     
+<script> 
+    // Used a template from online. I could not figure this out on my own.    
+
+    var alphabet = "abcdefghijklmnopqrstuvwxyz";
+    var fullAlphabet = alphabet + alphabet + alphabet;
+
+function runCipher(){
+  var cipherText = $('#cypher').val();
+  var cipherOffset = $('#offset').val();
+  cipherOffset = (cipherOffset % alphabet.length);
+  var cipherFinish = '';
+
+  for(i=0; i<cipherText.length; i++){
+     var letter = cipherText[i];
+     var upper = (letter == letter.toUpperCase());
+     letter = letter.toLowerCase();
+    
+     var index = alphabet.indexOf(letter);
+     if(index == -1){
+       cipherFinish += letter;
+     } else {
+       index = ((index + cipherOffset) + alphabet.length);
+       var nextLetter = fullAlphabet[index];
+       if(upper) nextLetter = nextLetter.toUpperCase();
+       cipherFinish += nextLetter;
+     }
+  }
+    
+  $('#finish').val(cipherFinish);
+}
+
+$(document).ready(function() {
+  $('#cypher').keypress(function(){
+    setTimeout(function(){ runCipher(); },20);
+  });
+  $('#cypher').blur(function(){
+    runCipher();
+  });
+  $('#offset').change(function(){
+    setTimeout(runCipher(),20);
+  });
+  
+});
+    
+    </script>
+  
+    
+ <script>
+    var x="";
+    var time=new Date().getHours();
+  if (time<20)
+    {
+      x="Have a Great day";
+    }
+  else
+    {
+      x="Have a Great evening";
+    }
+    document.write(x);
+                
+  </script>
+  
   <div id="scholarships">
     <h2 class="scholarships">Scholarships</h2>
       <ul  style="list-style-type:disc;">
@@ -100,6 +178,10 @@
     ctx.font = "30px Arial";
     ctx.fillText("   Francisco",10,50);
   </script>
+  <button onclick="myFunction()">Try it</button>
+ 
+
+
     
 </body> 
 </html>
